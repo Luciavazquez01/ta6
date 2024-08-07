@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta con opciones </title>
+</head>
+<body>
+    <h1>Formulario con Encuesta</h1>
+    <form action="/submit-survey" method="post">
+        <label for="favoriteFruit">Fruta favorita:</label>
+        <select id="favoriteFruit" name="favoriteFruit">
+            <option value="apple">Manzana</option>
+            <option value="banana">Banana</option>
+        </select><br><br>
+
+        <p>Color favorito:</p>
+        <input type="radio" id="colorGreen" name="favoriteColor" value="green">
+        <label for="colorGreen">Verde</label><br>
+        <input type="radio" id="colorYellow" name="favoriteColor" value="yellow">
+        <label for="colorYellow">Amarillo</label><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+
+</body>
+</html>
